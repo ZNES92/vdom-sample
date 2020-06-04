@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var tree = {
+            type: "div",
+            attrs: {
+                style: "width: 100px;height: 100px;background-color: red;position: absolute;left: 0px;top: 0px;"
+            },
+            children:[
+                {
+                    type: "div",
+                    attrs: {
+                        style: "width: 20px;height: 20px;border:2px solid white;border-radius: 10px;"
+                    }
+
+                },
+                {
+                    type: "span",
+                    attrs: {
+                        style: "color: blue"
+                    },
+                    children: [
+                        {
+                            type: "text",
+                            text: "gogogo"
+                        }
+                    ]
+                }
+            ]
+        }
+        create(tree);
+    </script>
+</body>
+</html>
